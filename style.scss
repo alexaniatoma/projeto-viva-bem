@@ -1,0 +1,703 @@
+@import url("https://fonts.googleapis.com/css2?family=Chau+Philomene+One:ital@0;1&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: "Inter",
+    "sans-serif";
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: url(./assets/img/bannerHeader.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 85vh;
+}
+
+.boxHeader {
+  background: linear-gradient(
+    to
+      right,
+    #4247a2
+      0%,
+    #52b095
+      100%
+  );
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 30px;
+  border-radius: 50px;
+  width: 100%;
+  height: 10vh;
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 40%;
+    height: 10vh;
+
+    a {
+      position: relative;
+      text-decoration: none;
+      color: #fff;
+      font-family: "Roboto, sans-serif";
+      font-size: 1.4rem;
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -3px;
+        width: 100%;
+        height: 3px;
+        background: #6c5ce7;
+        transform: scale(
+          0
+        );
+        transform-origin: left;
+        transition: transform
+          0.3s
+          ease-in-out;
+      }
+
+      &:hover::after {
+        transform: scale(
+          1
+        );
+      }
+    }
+  }
+}
+
+.boxBanner {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Inter",
+    "sans-serif";
+  width: 90%;
+  height: 65vh;
+
+  .boxTitulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 60vh;
+    width: 70%;
+   
+
+    h2 {
+      background: linear-gradient(
+        to
+          right,
+        #4247a2
+          0%,
+        #52b095
+          100%
+      );
+      font-size: 2.7rem;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      color: transparent;
+      font-weight: bold;
+      max-width: 550px;
+    }
+
+    p {
+      font-family: "Inter",
+        "sans-serif";
+      font-size: 1.5rem;
+      color: #04031c;
+      width: 60%;
+    }
+
+    .btnsButtons {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      button {
+        padding: 15px
+          30px;
+        border: none;
+        border-radius: 10px;
+        cursor: pointer;
+        transition: transform
+          0.3s
+          ease;
+        overflow: hidden;
+
+        &:hover {
+          transform: scale(
+            1.1
+          );
+        }
+      }
+
+      .btnAzul {
+        background: #1173d4;
+        color: #fff;
+      }
+
+      .btnTransparente {
+        background: transparent;
+        border: 2px
+          solid
+          #1173d4;
+        color: #1173d4;
+      }
+    }
+  }
+}
+
+.boxExamesRotina {
+  background-color: #f8f9fa;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;  
+  padding: 4rem 0;
+
+  h1 {
+    font-size: 2.7rem;
+    background: linear-gradient(to right, #4247a2 0%, #52b095 100%
+    );
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+  }
+
+  p {
+    color: #04031c;
+    font-size: 1.4rem;
+    width: 60%;
+    margin-bottom: 2rem;
+  }
+
+  div {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    width: 90%;
+  
+  
+    article {
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;     
+      box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+      color: #04031c;      
+      height: auto;
+      padding: 1rem 1rem;
+      width: 30%;
+      min-height: 28vh;
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    article:hover {
+      transform: translate(-2px);   
+      box-shadow: 0px 4px 8px rgba(0,0,0,0.10);
+     }
+
+      img {
+        width: 30%;
+      }
+
+      
+      h3 {
+        font-size: 1.5rem;  
+        padding: 1rem 0;    
+      }
+
+      p {
+        font-size: 1.3rem;
+        width: 90%;
+      }
+    }
+}
+
+.boxPrevencaoFeminina {
+  font-family: "Roboto",
+    "sans-serif";
+  background: #fdefef;
+  height: 100%;
+
+  h2 {
+    font-size: 2.7rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),
+                linear-gradient(90deg,rgba(249, 1, 111, 0.54 ) 0%, rgba(147, 8, 133, 0.619615) 41.83%, rgba(208, 56,170, 0.754793) 70.19%, #851c87 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-align: center;
+    height: auto;
+    padding-top: 3rem;
+  }
+}
+
+.cardFeminino,
+.cardMasculino {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 5rem;
+  padding-bottom: 3rem;
+  margin-top: 3rem;  
+  width: 100%;
+  height: auto; 
+
+  article {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.25);
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    width: 16rem;
+    padding-bottom: 1.5rem;
+    min-height: 26rem;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+    article:hover {
+    transform: translate(-6px);
+    box-shadow: 0px 10px 18px rgba(0, 0, 0, 0.18);
+  }
+
+
+  img {
+    margin: 1.3rem;
+    width: 40%;
+  }
+
+  .texto {
+    ul {
+      display: flex;
+      flex-direction: column;
+      text-align: start;
+      padding-left: 1.3rem;
+      margin-top: 1.3rem;
+      width: 100%;
+      gap: 0.8rem;
+    }
+  }
+}
+
+.boxPrevencaoMasculina {
+  font-family: "Roboto", "sans-serif";
+  background-color: #f8f9fa;
+  height: auto;
+
+  h2 {
+    font-size: 2.7rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),
+        linear-gradient(90deg, #3373d2 16.04%, #6f95c7 33.14%, #7bb5f5 54.51%, #0074ee 68.5%, #5ea7ef 87.02%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-align: center;
+    height: auto;
+    padding-top: 2rem;
+  }
+}
+
+.boxAlertasImportantes {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 50vh;
+  padding-top: 2rem;
+
+  h2 {
+    font-size: 2.7rem;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0),rgba(0, 0, 0, 0)),
+                linear-gradient(90deg, #3373d2 16.04%, #6f95c7 33.14%, #7bb5f5 54.51%, #0074ee 68.5%, #5ea7ef 87.02%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    font-weight: bold;
+    text-align: center;
+    height: auto;
+  }
+
+  .cardAlertasImportantes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1em
+      8rem;
+    padding-bottom: 4rem;
+    margin-top: 3rem;
+    width: 90%;
+    height: auto;
+  }
+
+  article {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    border-radius: 10px;
+    text-align: center;
+    width: 20rem;
+    min-height: 10rem;
+    height: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+    article:hover{
+      transform: translateY(-4px);
+      box-shadow: 0 8px 14px rgba(0,0,0,0.15);
+    }    
+
+    div {
+      display: flex;
+      align-items: center;
+
+      img {
+        width: 13%;
+      }
+
+      h3 {
+        font-weight: 700;
+        font-size: 1rem;
+      }
+    }
+
+    p {
+      font-size: 0.8rem;
+      width: 100%;
+      max-width: 18rem;
+    }
+  }
+
+  .cardVermelho {
+    background-color: #f9d5e5;
+    color: #ad346a;
+  }
+  .cardAzul {
+    background-color: #cfe2f3;
+    color: #2769a3;
+  }
+  .cardVerde {
+    background-color: #d4edda;
+    color: #244a2d;
+  }
+  .cardAmarelo {
+    background-color: #ffe9c2;
+    color: #976c00;
+  }
+
+
+footer {
+  font-size: 0.8rem;
+  color: #fefefe;
+  background: #313461;
+  padding: 2rem
+    0;
+  width: 100%;
+  height: auto;
+
+  .rodape {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    line-height: 2;
+    gap: 2rem;
+    width: 80%;
+    margin: 0
+      auto;
+    flex-wrap: wrap;
+
+    section {
+      flex: 1
+        1
+        250px;
+    }
+
+    .logo {
+      p {
+        max-width: 300px;
+      }
+
+      img {
+        width: 30%;
+      }
+    }
+
+    .links {
+      li {
+        list-style: none;
+
+        a {
+          color: #fefefe;
+        }
+      }
+    }
+
+    .contato {
+      h4 {
+        max-width: 350px;
+        line-height: normal;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .direitosAutorais {
+    border-top: 1px
+      solid
+      #9fabbc;
+    text-align: center;
+    margin-top: 2rem;
+    padding-top: 1rem;
+  }
+}
+
+//Responsividade
+//Responsivo Celular - Mobile First
+@media (min-width: 201px) and (max-width: 500px) {
+  header {
+    background-image: none;
+
+    .boxHeader {
+      height: 7vh;
+      width: 98%;
+
+      img {
+        width: 20%;
+      }
+
+      nav {
+        width: 100%;
+        height: auto;
+
+        a {
+          font-size: 0.7rem;
+          justify-content: space-evenly;
+        }
+      }
+    }
+  }
+
+  .boxBanner {
+    height: 98%;
+    width: 90%;
+    justify-content: center;
+    align-items: center;
+
+    .boxTitulo {
+      width: 100%;
+      align-items: center;
+      text-align: center;
+
+      justify-content: space-evenly;
+
+      h2 {
+        width: 90%;
+        font-size: 2.3rem;
+        
+      }
+
+      p {
+        width: 85%;
+        font-size: 1.5rem;
+        
+      }
+
+      .btnsButtons {
+        gap: 1rem;
+        justify-content: center;
+
+        button {
+          padding: 10px 8px;
+          font-size: 0.9rem;
+        }
+      }
+    }
+  }
+
+  .boxExamesRotina {
+    padding:  1rem 0;
+    height: auto;
+
+    h1 {
+      width: 90vw;
+      font-size: 1.3rem;
+    }
+
+    p {
+      width: 90%;
+      font-size: 0.9rem;
+    }
+
+    div {      
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;     
+      width: 90%;
+      gap:15px;
+
+      article {
+         width: 90%;
+         min-height: auto;         
+
+        img {
+          width:20%;
+        }
+
+        p {
+          font-size: 1rem;
+          width: 90%;
+        }
+      }
+    }
+  }
+
+  .boxPrevencaoFeminina,
+  .boxPrevencaoMasculina,
+  .boxAlertasImportantes {
+    h2 {
+      font-size: 1.5rem;
+    }
+  }
+
+  .cardFeminino,
+  .cardMasculino {
+    gap: 2rem;
+    padding: 2 1.2rem;
+  }
+
+  .cardFeminino
+    article,
+  .cardMasculino
+    article {
+    width: 90%;
+    max-width: 25rem;
+    margin: 0 auto;
+  }
+
+  footer {
+    font-size: 0.5rem;
+    justify-content: center;
+    margin-top: 0;
+
+    section {
+      min-width: 100%;
+    }
+
+    .logo {
+      p {
+        width: 100%;
+      }
+    }
+
+    .contato
+      h4 {
+      width: 100%;
+    }
+  }
+}
+
+//Responsivo Tablet
+@media (min-width: 501px) and (max-width: 900px) {
+  header {
+     justify-content: space-around;
+     background-position: top left;
+     padding: 1rem 0;    
+  }
+
+  .boxHeader {
+    height: 9vh;
+
+    img {
+      width: 25%;
+    }
+
+    nav {
+      width: 100%;
+      height: auto;
+      justify-content: space-evenly;
+
+      a {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .boxBanner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    max-width: 800px;
+    height: auto;
+
+    .boxTitulo {
+        width: 100%;
+     
+
+      h2 {
+        width: 80%;
+        font-size: 1.9rem;
+      }
+
+      p {
+        width: 50%;
+        font-size: 1.2rem;
+      }
+    }
+
+    .btnsButtons {
+      justify-content: flex-start;
+
+      button {
+        padding: 15px
+          30px;
+      }
+    }
+  }
+
+  .boxExamesRotina section {   
+    padding: 2rem 0;
+
+    article {
+      width: 45%;
+      min-height: 180px;
+      height: auto;
+
+      img {
+        width: 25%;
+      }
+    }
+  }
+}
+
+
+
